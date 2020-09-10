@@ -7,7 +7,30 @@
 <script src="./p5.play.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBC_oEmX0fnCt3M7xh4-vjwJ-VDbVHwJC0",
+    authDomain: "multiplayer-car-racing-g-f9701.firebaseapp.com",
+    databaseURL: "https://multiplayer-car-racing-g-f9701.firebaseio.com",
+    projectId: "multiplayer-car-racing-g-f9701",
+    storageBucket: "multiplayer-car-racing-g-f9701.appspot.com",
+    messagingSenderId: "677670044367",
+    appId: "1:677670044367:web:b5e5a47adc9703363b6dba",
+    measurementId: "G-8FB0FM41SM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </head>
   <body>
       <script src="sketch.js"></script>
